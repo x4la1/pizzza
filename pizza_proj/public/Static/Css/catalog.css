@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+}
+
+body {
+    background-image: url("./../Images/pizza-slice-seamless-pattern-background_573652-1142.avif");
+}
+
+main {
+    padding: 20px 20px 20px 20px;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1280px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.catalog__title {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid gray;
+}
+
+.catalog__title-text {
+    font-family: "Playfair Display";
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.catalog {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product {
+    width: 292px;
+    height: 600px;
+}
+.product__name {
+    font-family: "Playfair Display";
+}
+.product__desripiton {
+    font-family: 'oxygen';
+}
+.product__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.product__price {
+    margin: 0;
+    font-family: 'Oxygen';
+    font-size: 30px;
+}
+.make-order-button{
+    font-family: 'oxygen';
+    font-size: 20px;
+    color: rgb(209, 87, 0);
+    background-color: rgb(255, 240, 230);
+    border: 0px;
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
