@@ -1,0 +1,17 @@
+{% extends "admin/admin_catalog.html.twig" %}
+{% block content %}
+    {% for pizza in pizzas %}
+        <form action="" class="product" id="order{{ pizza.pizza_id }}">
+            <img class="product__image" src=".{{ pizza.image_path }}" alt="">
+            <h2 class="product__name">{{ pizza.name }}</h2>
+            <div class="product__description">
+                <p class="product__description-text">{{ pizza.description }}</p>
+            </div>
+            <div class="product__footer">
+                <p class="product__price">{{ pizza.cost }} р</p>
+                <button class="make-order-button" type="submit" form="order{{ pizza.pizza_id }}"> Заказать</button>
+            </div>
+            <input type="hidden" name="pizzaId" value="{{ pizza.pizza_id }}">
+        </form>
+    {% endfor %}
+{% endblock %}

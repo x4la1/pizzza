@@ -8,14 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+          rel="stylesheet">
     <style>
         @import url('https://fonts.cdnfonts.com/css/lora');
     </style>
 </head>
 
 <body>
-
+<main>
+    <div class="catalog__title">
+        <h2 class="catalog__title-text">Пиццы</h2>
+    </div>
+    <div class="catalog">
+        {% block content %}
+        {% endblock %}
+    </div>
+</main>
 </body>
 
 </html>

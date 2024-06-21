@@ -16,7 +16,7 @@
     <main class="content">
         <div class="login">
             <h1 class="login__title">Register</h1>
-            <form action="" class="login__form" id="login" method="post">
+            <form action="/user/register" class="login__form" id="login" method="post">
                 <div class="default-input login-form__email-input">
                     <label for="first_name" class="default-label-text">First Name</label>
                     <input type="text" name="first_name" class="default-input-field email-input-field" id="first_name" placeholder=" " required>
