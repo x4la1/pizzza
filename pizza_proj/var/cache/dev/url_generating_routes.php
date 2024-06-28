@@ -4,4 +4,16 @@
 
 return [
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], [], []],
+    'index' => [[], ['_controller' => 'App\\Controller\\UserController::index'], [], [['text', '/']], [], [], []],
+    'register_user' => [[], ['_controller' => 'App\\Controller\\UserController::registerUser'], [], [['text', '/user/register']], [], [], []],
+    'catalog' => [[], ['_controller' => 'App\\Controller\\StorefrontController::index'], [], [['text', '/catalog']], [], [], []],
+    'order' => [[], ['_controller' => 'App\\Controller\\OrderController::index'], [], [['text', '/catalog/order']], [], [], []],
+    'create_order' => [[], ['_controller' => 'App\\Controller\\OrderController::createOrder'], [], [['text', '/catalog/order/create']], [], [], []],
+    'show_ty_page' => [[], ['_controller' => 'App\\Controller\\OrderController::showTYPage'], [], [['text', '/catalog/order/created']], [], [], []],
+    'admin_catalog' => [[], ['_controller' => 'App\\Controller\\StorefrontController::showAdminCatalog'], [], [['text', '/admin/catalog']], [], [], []],
+    'add_pizza_form' => [[], ['_controller' => 'App\\Controller\\AddPizzaController::index'], [], [['text', '/admin/add-form']], [], [], []],
+    'add_pizza' => [[], ['_controller' => 'App\\Controller\\AddPizzaController::addPizza'], [], [['text', '/admin/add']], [], [], []],
+    'delete' => [[], ['_controller' => 'App\\Controller\\StorefrontController::deletePizza'], [], [['text', '/admin/catalog/delete']], [], [], []],
+    'admin_login_form' => [[], ['_controller' => 'App\\Controller\\AdminController::index'], [], [['text', '/admin']], [], [], []],
+    'admin_login' => [[], ['_controller' => 'App\\Controller\\AdminController::findAdmin'], [], [['text', '/admin/login']], [], [], []],
 ];
